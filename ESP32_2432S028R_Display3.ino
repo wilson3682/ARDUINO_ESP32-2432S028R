@@ -11,7 +11,9 @@ cohesion: steer to move towards the average position (center of mass) of local f
 */
 
 #define WITH_TIME
-#include <TFT_eSPI.h>
+#include <WiFi.h>         // Was Missing WiFi.h
+#include <TFT_eSPI.h>     // by Bodmer ver 2.5.34
+#include <NTPClient.h>    // by F.Weinberg ver 3.2.1
 #include <SPI.h>
 #include <math.h>
 
